@@ -1,5 +1,5 @@
 
-name: Deploy Print Map to GitHub Pages
+name: Deploy Geospatial Print Map
 
 on:
   push:
