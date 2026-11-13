@@ -11,7 +11,7 @@ const byStore = new Map();
 for(const item of inventory){if(!byStore.has(item.store_id))byStore.set(item.store_id,[]);byStore.get(item.store_id).push(item);}
 const storeById = new Map(stores.map(s=>[s.store_id,s]));
 let visible = stores.slice();
-let activeId = null; // Start at network overview; let the reviewer choose a partner.
+let activeId = null; // Select a location to populate the print panel.
 let view = 'map';
 let zoom=1,offsetX=0,offsetY=0,drag=null;
 let googleState={ready:false,scriptLoading:false,map2d:null,map3d:null,googleMarkers:[],markers3d:[],mode:'offline',key:'',timeout:null};
@@ -37,30 +37,29 @@ function setActive(id,focus=true){
  else if(googleState.ready) refreshGoogleMarkers();
  else renderOfflineMarkers();
 }
-function renderList(){const target=$('locations-list');target.replaceChildren();$('list-count').textContent=visible.length;
+function renderList(){const target=$('locations-list');target.replaceChildren();
  if(!visible.length){target.append(node('div','no-matches','No locations match these filters.'));return;}
  const fragment=document.createDocumentFragment();
  for(const s of [...visible].sort((a,b)=>a.partner_name.localeCompare(b.partner_name))){
   const btn=node('button','location-button'+(activeId===s.store_id?' active':''));btn.type='button';btn.setAttribute('aria-pressed',String(activeId===s.store_id));
   const text=node('span');text.append(node('span','location-name',s.partner_name),node('span','location-meta',`${s.city}, ${s.state} · ${s.store_type}`));
-  btn.append(text,node('span','location-number',allProducts(s).length));btn.addEventListener('click',()=>setActive(s.store_id,true));fragment.append(btn);
+  btn.append(text);btn.addEventListener('click',()=>setActive(s.store_id,true));fragment.append(btn);
  }target.append(fragment);
 }
 function renderDetails(){const target=$('location-detail');target.replaceChildren();const store=storeById.get(activeId);
  if(!store || !visible.some(s=>s.store_id===activeId)){target.append(node('p','empty-state','Select a location to view its print assortment.'));return;}
- const products=allProducts(store),custom=products.filter(x=>x.custom==='Yes');
- target.append(node('div','detail-kicker','RETAIL PARTNER'),node('h3','detail-name',store.partner_name),node('div','detail-place',`${store.city}, ${store.state} · ${store.store_type}`));
- const stats=node('div','detail-stats');
- for(const [value,label] of [[products.length,'Prints assigned'],[custom.length,'Custom editions']]){const stat=node('div','detail-stat');stat.append(node('strong','',value),node('small','',label));stats.append(stat);}target.append(stats,node('div','assortment-heading','Print assortment'));
+ const products=allProducts(store);
+ target.append(node('div','detail-kicker','LOCATION'),node('h3','detail-name',store.partner_name),node('div','detail-place',`${store.city}, ${store.state} · ${store.store_type}`));
+
  for(const edition of ['Regular','Custom']){const list=products.filter(x=>(x.custom==='Yes')===(edition==='Custom'));if(!list.length)continue;
   const group=node('div','assortment-group');group.append(node('div','assortment-category',edition==='Custom'?'Exclusive to this location':'Regular editions'));
   for(const item of list){const row=node('div','print-row');row.append(node('div','print-tile','?'),node('span','print-name',item.print_name));if(item.custom==='Yes')row.append(node('span','custom-tag','Custom'));group.append(row);}target.append(group);
  }
- const focus=node('button','focus-link','View location on map ↗');focus.type='button';focus.addEventListener('click',()=>{switchView('map');focusStore(store);});target.append(focus,node('div','art-note','Artwork intentionally omitted from this public sample.'));
+ const focus=node('button','focus-link','View location on map ↗');focus.type='button';focus.addEventListener('click',()=>{switchView('map');focusStore(store);});target.append(focus);
 }
 function renderFocusCard(){const el=$('map-focus-card');el.replaceChildren();const store=storeById.get(activeId);if(!store || !visible.some(s=>s.store_id===activeId)){el.hidden=true;return;}el.hidden=false;
  const close=node('button','focus-close','×');close.setAttribute('aria-label','Close preview');close.onclick=()=>{el.hidden=true;};el.append(close,node('div','focus-header',store.partner_name),node('div','focus-place',`${store.city}, ${store.state}`));
- const row=node('div','focus-prints');for(const p of allProducts(store).slice(0,5)){const thumb=node('div','focus-art','?');thumb.title=p.print_name;row.append(thumb);}el.append(row,node('div','focus-note',`${allProducts(store).length} assigned prints · imagery unavailable in public demo`));
+ const row=node('div','focus-prints');for(const p of allProducts(store).slice(0,5)){const thumb=node('div','focus-art','?');thumb.title=p.print_name;row.append(thumb);}el.append(row);
 }
 function constrain(){const limX=(zoom-1)*viewport.clientWidth/2,limY=(zoom-1)*viewport.clientHeight/2;offsetX=Math.max(-limX,Math.min(limX,offsetX));offsetY=Math.max(-limY,Math.min(limY,offsetY));}
 function updateOfflineTransform(){stage.style.transform=`translate(${offsetX}px,${offsetY}px) scale(${zoom})`;}
@@ -71,7 +70,7 @@ function renderOfflineMarkers(){if(googleState.ready)return;const target=$('map-
  for(const store of visible){const existing=groups.find(g=>Math.hypot((g.x-store.x)*w*zoom,(g.y-store.y)*h*zoom)<24);
  if(existing){existing.members.push(store);existing.x=existing.members.reduce((t,s)=>t+s.x,0)/existing.members.length;existing.y=existing.members.reduce((t,s)=>t+s.y,0)/existing.members.length;}
  else groups.push({x:store.x,y:store.y,members:[store]});}
- for(const g of groups){const cluster=g.members.length>1,store=g.members[0];const btn=node('button','marker'+(cluster?' cluster':'')+(!cluster&&store.store_id===activeId?' selected':''),cluster?g.members.length:'');btn.style.left=(g.x*100)+'%';btn.style.top=(g.y*100)+'%';btn.dataset.tooltip=cluster?`${g.members.length} locations` : store.partner_name;btn.setAttribute('aria-label',cluster?`${g.members.length} locations, zoom in`:store.partner_name);
+ for(const g of groups){const cluster=g.members.length>1,store=g.members[0];const btn=node('button','marker'+(cluster?' cluster':'')+(!cluster&&store.store_id===activeId?' selected':''),cluster?g.members.length:'');btn.style.left=(g.x*100)+'%';btn.style.top=(g.y*100)+'%';btn.style.transform=`translate(-50%,-50%) scale(${1/zoom})`;btn.dataset.tooltip=cluster?`${g.members.length} locations` : store.partner_name;btn.setAttribute('aria-label',cluster?`${g.members.length} locations, zoom in`:store.partner_name);
  btn.onclick=(ev)=>{ev.stopPropagation();if(cluster){zoom=Math.min(9,zoom*1.85);offsetX=(.5-g.x)*viewport.clientWidth*zoom;offsetY=(.5-g.y)*viewport.clientHeight*zoom;constrain();updateOfflineTransform();renderOfflineMarkers();}else setActive(store.store_id,true);};target.append(btn);}
 }
 function flyToLocation(store){
@@ -88,7 +87,7 @@ function focusStore(store){
  else focusOffline(store);
 }
 
-function mapNote(message,connected=false){$('map-notice').hidden=false;$('map-notice-text').textContent=message;$('map-connect').hidden=connected;$('map-mode-label').textContent=connected?(googleState.mode==='3d'?'GOOGLE 3D':'GOOGLE SATELLITE'):'OFFLINE MAP';}
+function mapNote(message,connected=false){$('map-notice').hidden=false;$('map-notice-text').textContent=message;$('map-connect').hidden=connected;}
 function markerIcon(color='#296a59',size=8){return {path:google.maps.SymbolPath.CIRCLE,fillColor:color,fillOpacity:1,strokeColor:'#fff',strokeOpacity:1,strokeWeight:2,scale:size};}
 function clusterByZoom(){if(!googleState.map2d)return visible.map(s=>({members:[s],lat:s.lat,lng:s.lon}));
  const z=googleState.map2d.getZoom()||5;const gap=z<5?5:z<7?1.1:z<9?.22:z<12?.035:0;
@@ -166,7 +165,7 @@ function setActiveModeButtons(){
  $('mode-satellite').classList.toggle('active',googleState.ready&&!is3d);
  $('mode-3d').setAttribute('aria-pressed',String(is3d));
  $('mode-satellite').setAttribute('aria-pressed',String(googleState.ready&&!is3d));
- $('map-mode-label').textContent=is3d?'GOOGLE 3D':googleState.ready?'GOOGLE SATELLITE':'OFFLINE MAP';
+ 
 }
 function enableSatellite(){
  const g=googleState;
@@ -227,6 +226,9 @@ function bootGoogle(key){
    refreshGoogleMarkers();
    resetGoogleCamera();
    setActiveModeButtons();
+   // On a hosted build with a configured browser key, open directly in 3D.
+   // Satellite remains available if 3D is unsupported or unavailable.
+   if(window.MARKET_ATLAS_CONFIG?.googleMapsApiKey)enable3D();
    $('connect-google').disabled=false;
    $('connect-google').textContent='Load Google Maps';
    $('maps-api-key').value=''; // Do not retain a key in the form after connection.
@@ -250,18 +252,18 @@ function renderDistribution(){const target=$('distribution-view');target.replace
  const printCount=new Map();for(const p of reg)printCount.set(p.print_name,(printCount.get(p.print_name)||0)+1);
  const top=[...printCount].sort((a,b)=>b[1]-a[1]).slice(0,8);top.forEach(([name,count])=>bar(left,name,count,top[0]?.[1]||1));
  const regions=unique(visible.map(s=>s.region));const regionCount=regions.map(r=>({name:r,count:visible.filter(s=>s.region===r).length})).sort((a,b)=>b.count-a.count);
- regionCount.forEach(a=>bar(right,a.name,a.count,regionCount[0]?.count||1));grid.append(left,right);target.append(grid,node('div','insights-note',`${reg.length} regular placements · ${cus.length} one-location custom editions · ${new Set(products.map(p=>p.product_id)).size} unique designs. All data is synthetic.`));
+ regionCount.forEach(a=>bar(right,a.name,a.count,regionCount[0]?.count||1));grid.append(left,right);target.append(grid,node('div','insights-note',`${reg.length} regular prints · ${cus.length} custom prints · ${new Set(products.map(p=>p.product_id)).size} designs.`));
 }
 function renderCoverage(){const target=$('coverage-view');target.replaceChildren();target.append(node('h3','insights-title','Geographic coverage'),node('p','insights-sub','Compare network presence by state and identify locations with limited distribution.'));
  const stateCount=new Map();for(const s of visible)stateCount.set(s.state,(stateCount.get(s.state)||0)+1);const sorted=[...stateCount].sort((a,b)=>b[1]-a[1]);
  const grid=node('div','insights-columns');const a=node('div','insights-block'),b=node('div','insights-block');a.append(node('h3','','Largest state networks'));b.append(node('h3','','Smaller state networks'));
- sorted.slice(0,9).forEach(([state,count])=>bar(a,state,count,sorted[0]?.[1]||1));sorted.slice().reverse().slice(0,9).forEach(([state,count])=>bar(b,state,count,sorted[0]?.[1]||1));grid.append(a,b);target.append(grid,node('div','insights-note','Coverage is based on sample partner counts only. Sparse presence does not establish unmet demand; market potential would require external demand, competition, and sales data.'));
+ sorted.slice(0,9).forEach(([state,count])=>bar(a,state,count,sorted[0]?.[1]||1));sorted.slice().reverse().slice(0,9).forEach(([state,count])=>bar(b,state,count,sorted[0]?.[1]||1));grid.append(a,b);target.append(grid,node('div','insights-note','Coverage reflects location counts. Low coverage alone does not establish market demand.'));
 }
 function switchView(next){view=next;document.querySelectorAll('.view-tab').forEach(el=>{const active=el.dataset.view===next;el.classList.toggle('active',active);el.setAttribute('aria-selected',String(active));});
- $('map-viewport').hidden=next!=='map';$('distribution-view').hidden=next!=='distribution';$('coverage-view').hidden=next!=='coverage';$('map-hint').textContent=next==='map'?'Select a store to explore its prints':next==='distribution'?'Distribution by product and region':'Partner distribution by state';
+ $('map-viewport').hidden=next!=='map';$('distribution-view').hidden=next!=='distribution';$('coverage-view').hidden=next!=='coverage';
  if(next==='distribution')renderDistribution();if(next==='coverage')renderCoverage();if(next==='map'){if(googleState.ready){refreshGoogleMarkers();}else renderOfflineMarkers();}
 }
-function refresh(){visible=matchingStores();const productList=visible.flatMap(allProducts);$('stat-locations').textContent=visible.length;$('stat-regular').textContent=productList.filter(p=>p.custom==='No').length;$('stat-custom').textContent=productList.filter(p=>p.custom==='Yes').length;$('stat-placements').textContent=productList.length;$('map-count').textContent=`${visible.length} locations`;
+function refresh(){visible=matchingStores();
  if(activeId&&!visible.some(s=>s.store_id===activeId))activeId=null;
  renderList();renderDetails();renderFocusCard();if(googleState.ready)refreshGoogleMarkers();else renderOfflineMarkers();if(view==='distribution')renderDistribution();if(view==='coverage')renderCoverage();
 }
