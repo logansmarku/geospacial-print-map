@@ -1,0 +1,262 @@
+product_id,print_name,category,edition
+R001,Amber Cloud,Cityscape,Regular
+R002,Cobalt Passage,Nature,Regular
+R003,Quiet Postcard,Abstract,Regular
+R004,Golden Lantern,Travel,Regular
+R005,Winding Sunroom,Botanical,Regular
+R006,Soft Market,Architecture,Regular
+R007,Morning Shore,Cityscape,Regular
+R008,Wild Corner,Nature,Regular
+R009,Open Window,Abstract,Regular
+R010,Glass Studio,Travel,Regular
+R011,New Canopy,Botanical,Regular
+R012,Distant Boulevard,Architecture,Regular
+R013,Blue Horizon,Cityscape,Regular
+R014,Salt Lighthouse,Nature,Regular
+R015,Velvet Garden,Abstract,Regular
+R016,Warmed Transit,Travel,Regular
+R017,Paper River,Botanical,Regular
+R018,Fresh Tide,Architecture,Regular
+R019,Amber Petal,Cityscape,Regular
+R020,Cobalt Atlas,Nature,Regular
+R021,Quiet Cloud,Abstract,Regular
+R022,Golden Passage,Travel,Regular
+R023,Winding Postcard,Botanical,Regular
+R024,Soft Lantern,Architecture,Regular
+R025,Morning Sunroom,Cityscape,Regular
+R026,Wild Market,Nature,Regular
+R027,Open Shore,Abstract,Regular
+R028,Glass Corner,Travel,Regular
+R029,New Window,Botanical,Regular
+R030,Distant Studio,Architecture,Regular
+R031,Blue Canopy,Cityscape,Regular
+R032,Salt Boulevard,Nature,Regular
+R033,Velvet Horizon,Abstract,Regular
+R034,Warmed Lighthouse,Travel,Regular
+R035,Paper Garden,Botanical,Regular
+R036,Fresh Transit,Architecture,Regular
+C001,Phoenix / Window — Side Street Studio,Custom,Custom
+C002,Phoenix / Passage — Side Street Studio,Custom,Custom
+C003,Newark / Tide — Mosaic General Store,Custom,Custom
+C004,Worcester / Shore — Mapleline Goods,Custom,Custom
+C005,Asheville / Transit — Willow Museum Shop,Custom,Custom
+C006,Portland / Sunroom — Southbank Collective,Custom,Custom
+C007,Portland / Tide — Southbank Collective,Custom,Custom
+C008,Denver / Lighthouse — Palisade Supply,Custom,Custom
+C009,Brooklyn / Postcard — Linden Books,Custom,Custom
+C010,Brooklyn / Transit — Linden Books,Custom,Custom
+C011,Tampa / Boulevard — Pollen Supply,Custom,Custom
+C012,Tampa / Sunroom — Pollen Supply,Custom,Custom
+C013,Raleigh / Cloud — Mariner General Store,Custom,Custom
+C014,Raleigh / Lighthouse — Mariner General Store,Custom,Custom
+C015,Brooklyn / Studio — The Narrow Lane Goods,Custom,Custom
+C016,Brooklyn / Postcard — The Narrow Lane Goods,Custom,Custom
+C017,Boston / Petal — Morrow Studio,Custom,Custom
+C018,Seattle / Corner — Borough Supply,Custom,Custom
+C019,Milwaukee / River — Palisade Studio,Custom,Custom
+C020,Philadelphia / Market — Elm & Ink Gallery,Custom,Custom
+C021,Baltimore / Garden — August Museum Shop,Custom,Custom
+C022,Baltimore / Corner — August Museum Shop,Custom,Custom
+C023,Austin / Lantern — Southbank Books,Custom,Custom
+C024,Austin / River — Southbank Books,Custom,Custom
+C025,Nashville / Horizon — Daybreak Goods,Custom,Custom
+C026,Syracuse / Passage — Golden Hour Market,Custom,Custom
+C027,Syracuse / Garden — Golden Hour Market,Custom,Custom
+C028,Brooklyn / Canopy — Tandem Paper Co.,Custom,Custom
+C029,New Haven / Atlas — Wildwood Market,Custom,Custom
+C030,Sacramento / Window — Moss Market,Custom,Custom
+C031,Sacramento / Passage — Moss Market,Custom,Custom
+C032,Miami / Tide — August Market,Custom,Custom
+C033,Concord / Shore — Wildwood Books,Custom,Custom
+C034,Concord / Atlas — Wildwood Books,Custom,Custom
+C035,Phoenix / Transit — Wildwood Paper Co.,Custom,Custom
+C036,Phoenix / Window — Wildwood Paper Co.,Custom,Custom
+C037,Washington / Sunroom — Blue Hour Goods,Custom,Custom
+C038,Washington / Tide — Blue Hour Goods,Custom,Custom
+C039,Austin / Lighthouse — Ash & Arrow Books,Custom,Custom
+C040,Denver / Postcard — Larkspur Gallery,Custom,Custom
+C041,Burlington / Boulevard — Drift Museum Shop,Custom,Custom
+C042,Burlington / Sunroom — Drift Museum Shop,Custom,Custom
+C043,Phoenix / Cloud — Slow Sunday Studio,Custom,Custom
+C044,Phoenix / Lighthouse — Slow Sunday Studio,Custom,Custom
+C045,Albany / Studio — Mariner Studio,Custom,Custom
+C046,Atlanta / Petal — Side Street Paper Co.,Custom,Custom
+C047,Hartford / Corner — Northline Goods,Custom,Custom
+C048,Brooklyn / River — Heirloom Supply,Custom,Custom
+C049,Washington / Market — Clover Gallery,Custom,Custom
+C050,Boston / Garden — Riverton Collective,Custom,Custom
+C051,Atlanta / Lantern — Field Notes Paper Co.,Custom,Custom
+C052,Atlanta / River — Field Notes Paper Co.,Custom,Custom
+C053,Hartford / Horizon — Tandem Books,Custom,Custom
+C054,Buffalo / Passage — Borough Books,Custom,Custom
+C055,Worcester / Canopy — Small Hours Collective,Custom,Custom
+C056,Norfolk / Atlas — August Paper Co.,Custom,Custom
+C057,Louisville / Window — Grove Goods,Custom,Custom
+C058,Boston / Tide — Side Street Collective,Custom,Custom
+C059,Norfolk / Shore — The Paper Room Supply,Custom,Custom
+C060,Charleston / Transit — Wildwood Goods,Custom,Custom
+C061,New Orleans / Sunroom — The Narrow Lane Studio,Custom,Custom
+C062,Albany / Lighthouse — Small Hours Studio,Custom,Custom
+C063,New Haven / Postcard — Northline Collective,Custom,Custom
+C064,Washington / Boulevard — Elm & Ink Supply,Custom,Custom
+C065,Providence / Cloud — Aperture Books,Custom,Custom
+C066,Seattle / Studio — Harborline Supply,Custom,Custom
+C067,Miami / Petal — Borough Goods,Custom,Custom
+C068,Miami / Boulevard — Borough Goods,Custom,Custom
+C069,Boston / Corner — Harborline Studio,Custom,Custom
+C070,Boston / Cloud — Harborline Studio,Custom,Custom
+C071,Stamford / River — Good Company Books,Custom,Custom
+C072,Stamford / Studio — Good Company Books,Custom,Custom
+C073,Oakland / Market — The Narrow Lane Collective,Custom,Custom
+C074,Lancaster / Garden — Lightwell General Store,Custom,Custom
+C075,Lancaster / Corner — Lightwell General Store,Custom,Custom
+C076,Oakland / Lantern — Grove Market,Custom,Custom
+C077,Princeton / Horizon — Sable Paper Co.,Custom,Custom
+C078,Brooklyn / Passage — Harborline Collective,Custom,Custom
+C079,New Haven / Canopy — Cinder Market,Custom,Custom
+C080,Richmond / Atlas — Slow Sunday Collective,Custom,Custom
+C081,New Haven / Window — The Paper Room Gallery,Custom,Custom
+C082,Hartford / Tide — Southbank General Store,Custom,Custom
+C083,Seattle / Shore — Quarry Paper Co.,Custom,Custom
+C084,Bangor / Transit — Mapleline Gallery,Custom,Custom
+C085,Bangor / Window — Mapleline Gallery,Custom,Custom
+C086,Charlotte / Sunroom — Larkspur Supply,Custom,Custom
+C087,New Haven / Lighthouse — Daybreak Studio,Custom,Custom
+C088,Boulder / Postcard — Wren Books,Custom,Custom
+C089,Washington / Boulevard — Clover Market,Custom,Custom
+C090,Washington / Sunroom — Clover Market,Custom,Custom
+C091,Boston / Cloud — Daybreak Market,Custom,Custom
+C092,Boston / Lighthouse — Daybreak Market,Custom,Custom
+C093,San Francisco / Studio — Morrow Goods,Custom,Custom
+C094,Boise / Petal — Orchard Gallery,Custom,Custom
+C095,Boise / Boulevard — Orchard Gallery,Custom,Custom
+C096,Miami / Corner — Elm & Ink General Store,Custom,Custom
+C097,Richmond / River — Moss Studio,Custom,Custom
+C098,Richmond / Studio — Moss Studio,Custom,Custom
+C099,New York / Market — Common Ground Collective,Custom,Custom
+C100,New York / Petal — Common Ground Collective,Custom,Custom
+C101,New Orleans / Garden — Wildwood General Store,Custom,Custom
+C102,Charlotte / Lantern — The Paper Room Goods,Custom,Custom
+C103,Worcester / Horizon — Kestrel General Store,Custom,Custom
+C104,Arlington / Passage — Willow Goods,Custom,Custom
+C105,Manchester / Canopy — Sable Collective,Custom,Custom
+C106,Washington / Atlas — Slow Sunday Supply,Custom,Custom
+C107,Washington / Horizon — Slow Sunday Supply,Custom,Custom
+C108,Boston / Window — Kestrel Museum Shop,Custom,Custom
+C109,Boston / Passage — Kestrel Museum Shop,Custom,Custom
+C110,Rochester / Tide — Cypress Market,Custom,Custom
+C111,Los Angeles / Shore — Orchard Market,Custom,Custom
+C112,Savannah / Transit — Fern Supply,Custom,Custom
+C113,Savannah / Window — Fern Supply,Custom,Custom
+C114,Boston / Sunroom — Cinder Gallery,Custom,Custom
+C115,Boston / Tide — Cinder Gallery,Custom,Custom
+C116,Birmingham / Lighthouse — Cinder Collective,Custom,Custom
+C117,Birmingham / Shore — Cinder Collective,Custom,Custom
+C118,Washington / Postcard — Mapleline Market,Custom,Custom
+C119,Washington / Transit — Mapleline Market,Custom,Custom
+C120,Raleigh / Boulevard — Aperture Museum Shop,Custom,Custom
+C121,Philadelphia / Cloud — Heirloom Goods,Custom,Custom
+C122,Philadelphia / Lighthouse — Heirloom Goods,Custom,Custom
+C123,Syracuse / Studio — Linden Paper Co.,Custom,Custom
+C124,Syracuse / Postcard — Linden Paper Co.,Custom,Custom
+C125,Albany / Petal — Pine & Press Goods,Custom,Custom
+C126,Albany / Boulevard — Pine & Press Goods,Custom,Custom
+C127,Norfolk / Corner — Elm & Ink Goods,Custom,Custom
+C128,Norfolk / Cloud — Elm & Ink Goods,Custom,Custom
+C129,Detroit / River — Pine & Press Books,Custom,Custom
+C130,San Diego / Market — Lightwell Market,Custom,Custom
+C131,Asheville / Garden — Moss Gallery,Custom,Custom
+C132,Birmingham / Lantern — Everspring Museum Shop,Custom,Custom
+C133,Austin / Horizon — Small Hours Books,Custom,Custom
+C134,Charlotte / Passage — Sable Goods,Custom,Custom
+C135,Charlotte / Garden — Sable Goods,Custom,Custom
+C136,Rochester / Canopy — Parkside Paper Co.,Custom,Custom
+C137,Rochester / Lantern — Parkside Paper Co.,Custom,Custom
+C138,Miami / Atlas — Slow Sunday Paper Co.,Custom,Custom
+C139,Miami / Horizon — Slow Sunday Paper Co.,Custom,Custom
+C140,Washington / Window — Clover Supply,Custom,Custom
+C141,Bangor / Tide — Lightwell Supply,Custom,Custom
+C142,Concord / Shore — Common Ground Market,Custom,Custom
+C143,Tampa / Transit — Kindred Collective,Custom,Custom
+C144,Tampa / Window — Kindred Collective,Custom,Custom
+C145,Boulder / Sunroom — Orchard Goods,Custom,Custom
+C146,Stamford / Lighthouse — Lumen Collective,Custom,Custom
+C147,Milwaukee / Postcard — Riverton Studio,Custom,Custom
+C148,Milwaukee / Transit — Riverton Studio,Custom,Custom
+C149,Brooklyn / Boulevard — Tandem Goods,Custom,Custom
+C150,Brooklyn / Sunroom — Tandem Goods,Custom,Custom
+C151,Stamford / Cloud — Hearthside Studio,Custom,Custom
+C152,Dallas / Studio — Common Ground Paper Co.,Custom,Custom
+C153,Birmingham / Petal — Grove General Store,Custom,Custom
+C154,Charlotte / Corner — Good Company Market,Custom,Custom
+C155,Austin / River — Margot Books,Custom,Custom
+C156,Austin / Studio — Margot Books,Custom,Custom
+C157,Brooklyn / Market — Heirloom Paper Co.,Custom,Custom
+C158,Portland / Garden — Coastal Paper Co.,Custom,Custom
+C159,Portland / Corner — Coastal Paper Co.,Custom,Custom
+C160,San Francisco / Lantern — Juniper Paper Co.,Custom,Custom
+C161,Oakland / Horizon — Field Notes Books,Custom,Custom
+C162,Oakland / Market — Field Notes Books,Custom,Custom
+C163,Manchester / Passage — Field Notes Supply,Custom,Custom
+C164,Albany / Canopy — Mosaic Collective,Custom,Custom
+C165,Baltimore / Atlas — Golden Hour Gallery,Custom,Custom
+C166,San Francisco / Window — Quarry Collective,Custom,Custom
+C167,Brooklyn / Tide — Linden General Store,Custom,Custom
+C168,Portland / Shore — Sable General Store,Custom,Custom
+C169,Washington / Transit — Sable Gallery,Custom,Custom
+C170,Washington / Window — Sable Gallery,Custom,Custom
+C171,Charlotte / Sunroom — Fern Books,Custom,Custom
+C172,Brooklyn / Lighthouse — Parkside Market,Custom,Custom
+C173,Albany / Postcard — Elm & Ink Studio,Custom,Custom
+C174,Nashville / Boulevard — Coastal Gallery,Custom,Custom
+C175,Rochester / Cloud — Aperture Gallery,Custom,Custom
+C176,Rochester / Lighthouse — Aperture Gallery,Custom,Custom
+C177,Oakland / Studio — Stillwater General Store,Custom,Custom
+C178,Oakland / Postcard — Stillwater General Store,Custom,Custom
+C179,Madison / Petal — Clover Collective,Custom,Custom
+C180,Burlington / Corner — Daybreak Paper Co.,Custom,Custom
+C181,Savannah / River — Beacon Studio,Custom,Custom
+C182,Oakland / Market — Harborline Paper Co.,Custom,Custom
+C183,Charleston / Garden — Larkspur Collective,Custom,Custom
+C184,Los Angeles / Lantern — Beacon Goods,Custom,Custom
+C185,Tacoma / Horizon — Margot Supply,Custom,Custom
+C186,Tacoma / Passage — Good Company Paper Co.,Custom,Custom
+C187,Raleigh / Canopy — Blue Hour Paper Co.,Custom,Custom
+C188,Raleigh / Lantern — Blue Hour Paper Co.,Custom,Custom
+C189,Philadelphia / Atlas — Blue Hour General Store,Custom,Custom
+C190,Asheville / Window — Wren Studio,Custom,Custom
+C191,Brooklyn / Tide — Riverton Museum Shop,Custom,Custom
+C192,Brooklyn / Canopy — Riverton Museum Shop,Custom,Custom
+C193,Phoenix / Shore — Aperture Studio,Custom,Custom
+C194,Phoenix / Atlas — Aperture Studio,Custom,Custom
+C195,Brooklyn / Transit — Side Street Gallery,Custom,Custom
+C196,Portland / Sunroom — Wren Gallery,Custom,Custom
+C197,Boston / Lighthouse — Wren Supply,Custom,Custom
+C198,Boston / Shore — Wren Supply,Custom,Custom
+C199,Portland / Postcard — Kestrel Collective,Custom,Custom
+C200,Philadelphia / Boulevard — Palisade General Store,Custom,Custom
+C201,Philadelphia / Sunroom — Palisade General Store,Custom,Custom
+C202,Charleston / Cloud — Heirloom General Store,Custom,Custom
+C203,St. Louis / Studio — Ash & Arrow Museum Shop,Custom,Custom
+C204,Phoenix / Petal — Hearthside General Store,Custom,Custom
+C205,Phoenix / Boulevard — Hearthside General Store,Custom,Custom
+C206,Brooklyn / Corner — Quarry General Store,Custom,Custom
+C207,Lancaster / River — Slate Supply,Custom,Custom
+C208,Lancaster / Studio — Slate Supply,Custom,Custom
+C209,Salt Lake City / Market — Everspring General Store,Custom,Custom
+C210,New Haven / Garden — Good Company General Store,Custom,Custom
+C211,New Haven / Corner — Good Company General Store,Custom,Custom
+C212,Louisville / Lantern — Drift General Store,Custom,Custom
+C213,New Haven / Horizon — Palisade Goods,Custom,Custom
+C214,San Francisco / Passage — Willow General Store,Custom,Custom
+C215,Arlington / Canopy — Quarry Museum Shop,Custom,Custom
+C216,New York / Atlas — Clover General Store,Custom,Custom
+C217,New York / Horizon — Clover General Store,Custom,Custom
+C218,Boulder / Window — Field Notes General Store,Custom,Custom
+C219,Worcester / Tide — Borough General Store,Custom,Custom
+C220,Philadelphia / Shore — Little Acre Supply,Custom,Custom
+C221,Philadelphia / Atlas — Little Acre Supply,Custom,Custom
+C222,Austin / Transit — Wren Market,Custom,Custom
+C223,Oakland / Sunroom — August Studio,Custom,Custom
+C224,Dallas / Lighthouse — Beacon Supply,Custom,Custom
+C225,Richmond / Postcard — Harborline Gallery,Custom,Custom

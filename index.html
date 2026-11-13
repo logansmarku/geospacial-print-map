@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f7f5">
+  <title></title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="identity">
+      <span class="symbol" aria-hidden="true"><svg viewBox="0 0 28 28" width="25" height="25"><path d="m5 21 6-14 5.1 11 3.6-7L24 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="7" r="1.8" fill="currentColor"/></svg></span>
+      <span class="brand">Inciardi Prints</span><span class="brand-divider"></span><span class="brand-section"> Sample Data </span>
+    </div>
+    <div class="topbar-right"><a class="toplink" href="data/market_atlas_google_earth.kml" download>Export KML ↗</a><button id="open-settings" class="btn-outline" type="button">Map settings <span aria-hidden="true">⚙</span></button></div>
+  </header>
+  <section class="overview" aria-label="Network overview">
+    <div><div class="eyebrow">Notice <span class="eyebrow-line"><p class="overview-sub">Sample data is used instead of real print data</p></div>
+    <div class="overview-stats" aria-live="polite"><div class="stat"><strong id="stat-locations">—</strong><span>Partners</span></div><div class="stat"><strong id="stat-regular">—</strong><span>Regular placements</span></div><div class="stat"><strong id="stat-custom">—</strong><span>Custom editions</span></div><div class="stat"><strong id="stat-placements">—</strong><span>Total placements</span></div></div>
+  </section>
+  <main class="workspace">
+    <aside class="panel locations-panel" aria-labelledby="locations-title">
+      <div class="panel-heading"><h2 id="locations-title">Locations</h2><span id="list-count" class="count-small">—</span></div>
+      <div class="filters">
+        <label class="sr-only" for="search">Search stores</label>
+        <div class="search-wrap"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.7" cy="10.7" r="6.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m15.5 15.5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input id="search" type="search" placeholder="Find a location" autocomplete="off"></div>
+        <label class="sr-only" for="print-search">Search prints</label>
+        <div class="search-wrap"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 10h6m-6 4h6" stroke="currentColor" stroke-width="1.7"/></svg><input id="print-search" type="search" placeholder="Find a print" autocomplete="off"></div>
+        <div class="filter-row"><div><label for="region">REGION</label><select id="region"><option value="">All regions</option></select></div><div><label for="partner-type">STORE TYPE</label><select id="partner-type"><option value="">All types</option></select></div></div>
+        <div class="filter-row"><div><label for="product-category">PRINT CATEGORY</label><select id="product-category"><option value="">All categories</option></select></div></div>
+        <div class="toggle-row"><label><input id="custom-only" type="checkbox">Custom editions only</label><button id="clear-filters" type="button" class="text-button">Reset</button></div>
+      </div>
+      <div id="locations-list" class="locations-list"></div>
+    </aside>
+    <section class="panel map-panel" aria-label="Map and analytics">
+      <div class="panel-heading map-heading"><div class="view-tabs" role="tablist" aria-label="Network views"><button class="view-tab active" data-view="map" aria-selected="true">Map</button><button class="view-tab" data-view="distribution" aria-selected="false">Distribution</button><button class="view-tab" data-view="coverage" aria-selected="false">Coverage</button></div><span class="map-count"><span class="legend-dot"></span><span id="map-count">— locations</span></span></div>
+      <div id="map-viewport" class="map-viewport" role="region" aria-label="Interactive network map">
+        <div id="map-offline" class="offline-map">
+          <div id="map-stage" class="map-stage"><img class="base-image" src="assets/us_map.png" alt="Map of the contiguous United States" draggable="false"><div id="map-pins" class="map-pins"></div></div>
+        </div>
+        <div id="map-google2d" class="google-map" hidden></div>
+        <div id="map-google3d" class="google-map" hidden></div>
+        <div class="map-toolbar"><div class="map-mode-switch"><button id="mode-satellite" type="button" class="mode-pill active">Satellite</button><button id="mode-3d" type="button" class="mode-pill" title="Google photorealistic 3D requires a Maps API key">3D</button></div><div class="map-zoom"><button id="zoom-in" title="Zoom in" aria-label="Zoom in">+</button><button id="zoom-out" title="Zoom out" aria-label="Zoom out">−</button><button id="reset-map" title="Reset map" aria-label="Reset map">⌖</button></div></div>
+        <div id="map-focus-card" class="map-focus-card" hidden></div>
+        <div id="map-notice" class="map-notice"><span class="status-dot"></span><span id="map-notice-text">Offline map</span><button id="map-connect" type="button">Connect Google Maps ↗</button></div>
+      </div>
+      <section id="distribution-view" class="insights-view" hidden aria-label="Print distribution"></section>
+      <section id="coverage-view" class="insights-view" hidden aria-label="Geographic coverage"></section>
+      <div class="map-bottom"><span id="map-hint">Select a store to explore its prints</span><span id="map-mode-label">OFFLINE MAP</span></div>
+    </section>
+    <aside class="panel detail-panel" aria-label="Selected location">
+      <div class="panel-heading"><h2>Location details</h2><span class="detail-bullet"></span></div>
+      <div id="location-detail" class="location-detail"><p class="empty-state">Select a location to view its print assortment.</p></div>
+    </aside>
+  </main>
+</div>
+<dialog id="settings-dialog" class="settings-dialog"><form method="dialog" class="settings-inner"><div class="dialog-top"><div><div class="eyebrow">INTEGRATION</div><h2>Google Maps</h2></div><button class="icon-button" value="cancel" aria-label="Close settings">×</button></div><p>Connect your own Google Maps Platform key to enable satellite imagery and 3D flyovers. The map remains editable without a key.</p><label for="maps-api-key">Maps JavaScript API key</label><input type="password" id="maps-api-key" placeholder="Paste API key" spellcheck="false" autocomplete="off"><p class="help">Enable Maps JavaScript API and billing, then restrict this key to your website and that API. A key entered here is used for this browser session only.</p><div id="settings-error" class="settings-error" aria-live="polite"></div><div class="dialog-actions"><button value="cancel" class="btn-outline">Cancel</button><button id="connect-google" value="connect" type="button" class="btn-primary">Load Google Maps</button></div></form></dialog>
+<script src="assets/config.js"></script><script src="assets/data.js"></script><script src="assets/app.js"></script>
+</body></html>

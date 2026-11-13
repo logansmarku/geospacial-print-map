@@ -1,0 +1,168 @@
+store_id,partner_name,city,state,region,lat,lon,store_type
+S001,Side Street Studio,Phoenix,AZ,Mountain,33.44465,-112.0825,Bookstore
+S002,Mosaic General Store,Newark,NJ,Mid-Atlantic,40.67989,-74.10754,Independent Retail
+S003,Mapleline Goods,Worcester,MA,Northeast,42.27178,-71.76179,Bookstore
+S004,Willow Museum Shop,Asheville,NC,South,35.58839,-82.61186,Independent Retail
+S005,Southbank Collective,Portland,OR,West,45.52579,-122.72854,Bookstore
+S006,Palisade Supply,Denver,CO,Mountain,39.78962,-104.91294,Independent Retail
+S007,Linden Books,Brooklyn,NY,Northeast,40.66215,-73.88995,Bookstore
+S008,Pollen Supply,Tampa,FL,South,27.96301,-82.47621,Independent Retail
+S009,Mariner General Store,Raleigh,NC,South,35.7822,-78.60166,Gift Shop
+S010,The Narrow Lane Goods,Brooklyn,NY,Northeast,40.71701,-73.89889,Gallery
+S011,Morrow Studio,Boston,MA,Northeast,42.33016,-71.12982,Gift Shop
+S012,Borough Supply,Seattle,WA,West,47.61814,-122.3125,Gallery
+S013,Palisade Studio,Milwaukee,WI,Midwest,43.03099,-87.91873,Gift Shop
+S014,Elm & Ink Gallery,Philadelphia,PA,Mid-Atlantic,39.95093,-75.21357,Gallery
+S015,August Museum Shop,Baltimore,MD,Mid-Atlantic,39.24244,-76.66485,Gift Shop
+S016,Southbank Books,Austin,TX,South,30.20791,-97.66876,Gallery
+S017,Daybreak Goods,Nashville,TN,South,36.15478,-86.80024,Museum Shop
+S018,Golden Hour Market,Syracuse,NY,Northeast,43.09141,-76.12491,Lifestyle Shop
+S019,Tandem Paper Co.,Brooklyn,NY,Northeast,40.65983,-73.99966,Museum Shop
+S020,Wildwood Market,New Haven,CT,Northeast,41.26998,-72.95662,Lifestyle Shop
+S021,Moss Market,Sacramento,CA,West,38.58742,-121.43522,Museum Shop
+S022,August Market,Miami,FL,South,25.72581,-80.17468,Lifestyle Shop
+S023,Wildwood Books,Concord,NH,Northeast,43.2289,-71.48636,Museum Shop
+S024,Wildwood Paper Co.,Phoenix,AZ,Mountain,33.47992,-112.13445,Lifestyle Shop
+S025,Blue Hour Goods,Washington,DC,Mid-Atlantic,38.96036,-77.08622,Independent Retail
+S026,Ash & Arrow Books,Austin,TX,South,30.31894,-97.70184,Bookstore
+S027,Larkspur Gallery,Denver,CO,Mountain,39.72601,-104.96709,Independent Retail
+S028,Drift Museum Shop,Burlington,VT,Northeast,44.43461,-73.25299,Bookstore
+S029,Slow Sunday Studio,Phoenix,AZ,Mountain,33.40584,-112.10766,Independent Retail
+S030,Mariner Studio,Albany,NY,Northeast,42.67904,-73.7726,Bookstore
+S031,Side Street Paper Co.,Atlanta,GA,South,33.6943,-84.44322,Independent Retail
+S032,Northline Goods,Hartford,CT,Northeast,41.81283,-72.74567,Bookstore
+S033,Heirloom Supply,Brooklyn,NY,Northeast,40.69061,-74.02802,Gallery
+S034,Clover Gallery,Washington,DC,Mid-Atlantic,38.84023,-77.09467,Gift Shop
+S035,Riverton Collective,Boston,MA,Northeast,42.3734,-71.03141,Gallery
+S036,Field Notes Paper Co.,Atlanta,GA,South,33.73006,-84.35423,Gift Shop
+S037,Tandem Books,Hartford,CT,Northeast,41.7794,-72.60016,Gallery
+S038,Borough Books,Buffalo,NY,Northeast,42.90396,-78.83848,Gift Shop
+S039,Small Hours Collective,Worcester,MA,Northeast,42.29007,-71.78734,Gallery
+S040,August Paper Co.,Norfolk,VA,Mid-Atlantic,36.86615,-76.29356,Gift Shop
+S041,Grove Goods,Louisville,KY,South,38.22001,-85.68747,Lifestyle Shop
+S042,Side Street Collective,Boston,MA,Northeast,42.29703,-71.05532,Museum Shop
+S043,The Paper Room Supply,Norfolk,VA,Mid-Atlantic,36.8853,-76.36113,Lifestyle Shop
+S044,Wildwood Goods,Charleston,SC,South,32.79679,-79.93029,Museum Shop
+S045,The Narrow Lane Studio,New Orleans,LA,South,29.95419,-90.1364,Lifestyle Shop
+S046,Small Hours Studio,Albany,NY,Northeast,42.60497,-73.76343,Museum Shop
+S047,Northline Collective,New Haven,CT,Northeast,41.28808,-72.92397,Lifestyle Shop
+S048,Elm & Ink Supply,Washington,DC,Mid-Atlantic,38.94525,-77.07153,Museum Shop
+S049,Aperture Books,Providence,RI,Northeast,41.80336,-71.36395,Bookstore
+S050,Harborline Supply,Seattle,WA,West,47.67269,-122.31472,Independent Retail
+S051,Borough Goods,Miami,FL,South,25.77679,-80.16768,Bookstore
+S052,Harborline Studio,Boston,MA,Northeast,42.36499,-71.03649,Independent Retail
+S053,Good Company Books,Stamford,CT,Northeast,41.03185,-73.57362,Bookstore
+S054,The Narrow Lane Collective,Oakland,CA,West,37.78205,-122.31523,Independent Retail
+S055,Lightwell General Store,Lancaster,PA,Mid-Atlantic,40.00622,-76.35615,Bookstore
+S056,Grove Market,Oakland,CA,West,37.80851,-122.23375,Independent Retail
+S057,Sable Paper Co.,Princeton,NJ,Mid-Atlantic,40.31589,-74.63395,Gift Shop
+S058,Harborline Collective,Brooklyn,NY,Northeast,40.67344,-73.90009,Gallery
+S059,Cinder Market,New Haven,CT,Northeast,41.35492,-72.85401,Gift Shop
+S060,Slow Sunday Collective,Richmond,VA,Mid-Atlantic,37.51537,-77.45769,Gallery
+S061,The Paper Room Gallery,New Haven,CT,Northeast,41.32972,-72.95337,Gift Shop
+S062,Southbank General Store,Hartford,CT,Northeast,41.75855,-72.65145,Gallery
+S063,Quarry Paper Co.,Seattle,WA,West,47.59246,-122.28081,Gift Shop
+S064,Mapleline Gallery,Bangor,ME,Northeast,44.83235,-68.79252,Gallery
+S065,Larkspur Supply,Charlotte,NC,South,35.21594,-80.83058,Museum Shop
+S066,Daybreak Studio,New Haven,CT,Northeast,41.32829,-72.91993,Lifestyle Shop
+S067,Wren Books,Boulder,CO,Mountain,40.03469,-105.22314,Museum Shop
+S068,Clover Market,Washington,DC,Mid-Atlantic,38.94782,-76.9699,Lifestyle Shop
+S069,Daybreak Market,Boston,MA,Northeast,42.4111,-71.11866,Museum Shop
+S070,Morrow Goods,San Francisco,CA,West,37.79079,-122.45581,Lifestyle Shop
+S071,Orchard Gallery,Boise,ID,Mountain,43.65061,-116.13221,Museum Shop
+S072,Elm & Ink General Store,Miami,FL,South,25.77188,-80.18226,Lifestyle Shop
+S073,Moss Studio,Richmond,VA,Mid-Atlantic,37.50028,-77.48733,Independent Retail
+S074,Common Ground Collective,New York,NY,Northeast,40.69251,-74.03861,Bookstore
+S075,Wildwood General Store,New Orleans,LA,South,29.91342,-89.99071,Independent Retail
+S076,The Paper Room Goods,Charlotte,NC,South,35.29453,-80.82106,Bookstore
+S077,Kestrel General Store,Worcester,MA,Northeast,42.31626,-71.86944,Independent Retail
+S078,Willow Goods,Arlington,VA,Mid-Atlantic,38.9037,-77.11342,Bookstore
+S079,Sable Collective,Manchester,NH,Northeast,42.97395,-71.42685,Independent Retail
+S080,Slow Sunday Supply,Washington,DC,Mid-Atlantic,38.94542,-77.06793,Bookstore
+S081,Kestrel Museum Shop,Boston,MA,Northeast,42.41488,-71.06752,Gallery
+S082,Cypress Market,Rochester,NY,Northeast,43.20562,-77.55879,Gift Shop
+S083,Orchard Market,Los Angeles,CA,West,34.05038,-118.23932,Gallery
+S084,Fern Supply,Savannah,GA,South,32.12198,-81.02899,Gift Shop
+S085,Cinder Gallery,Boston,MA,Northeast,42.30347,-71.1394,Gallery
+S086,Cinder Collective,Birmingham,AL,South,33.49309,-86.82463,Gift Shop
+S087,Mapleline Market,Washington,DC,Mid-Atlantic,38.85791,-77.07568,Gallery
+S088,Aperture Museum Shop,Raleigh,NC,South,35.72619,-78.66761,Gift Shop
+S089,Heirloom Goods,Philadelphia,PA,Mid-Atlantic,40.0015,-75.21861,Lifestyle Shop
+S090,Linden Paper Co.,Syracuse,NY,Northeast,43.06163,-76.21148,Museum Shop
+S091,Pine & Press Goods,Albany,NY,Northeast,42.63728,-73.83634,Lifestyle Shop
+S092,Elm & Ink Goods,Norfolk,VA,Mid-Atlantic,36.793,-76.33511,Museum Shop
+S093,Pine & Press Books,Detroit,MI,Midwest,42.32479,-83.02801,Lifestyle Shop
+S094,Lightwell Market,San Diego,CA,West,32.70615,-117.17788,Museum Shop
+S095,Moss Gallery,Asheville,NC,South,35.6146,-82.59703,Lifestyle Shop
+S096,Everspring Museum Shop,Birmingham,AL,South,33.51153,-86.81796,Museum Shop
+S097,Small Hours Books,Austin,TX,South,30.29539,-97.68263,Bookstore
+S098,Sable Goods,Charlotte,NC,South,35.26205,-80.8019,Independent Retail
+S099,Parkside Paper Co.,Rochester,NY,Northeast,43.16473,-77.63454,Bookstore
+S100,Slow Sunday Paper Co.,Miami,FL,South,25.83056,-80.20727,Independent Retail
+S101,Clover Supply,Washington,DC,Mid-Atlantic,38.90868,-77.08209,Bookstore
+S102,Lightwell Supply,Bangor,ME,Northeast,44.85844,-68.75323,Independent Retail
+S103,Common Ground Market,Concord,NH,Northeast,43.22385,-71.51421,Bookstore
+S104,Kindred Collective,Tampa,FL,South,27.96619,-82.39692,Independent Retail
+S105,Orchard Goods,Boulder,CO,Mountain,40.00136,-105.34214,Gift Shop
+S106,Lumen Collective,Stamford,CT,Northeast,41.07904,-73.51025,Gallery
+S107,Riverton Studio,Milwaukee,WI,Midwest,43.01586,-87.8876,Gift Shop
+S108,Tandem Goods,Brooklyn,NY,Northeast,40.62005,-74.02651,Gallery
+S109,Hearthside Studio,Stamford,CT,Northeast,41.06492,-73.46629,Gift Shop
+S110,Common Ground Paper Co.,Dallas,TX,South,32.73176,-96.75334,Gallery
+S111,Grove General Store,Birmingham,AL,South,33.51674,-86.77946,Gift Shop
+S112,Good Company Market,Charlotte,NC,South,35.23942,-80.85735,Gallery
+S113,Margot Books,Austin,TX,South,30.28687,-97.80822,Museum Shop
+S114,Heirloom Paper Co.,Brooklyn,NY,Northeast,40.67125,-73.95641,Lifestyle Shop
+S115,Coastal Paper Co.,Portland,OR,West,45.47927,-122.61874,Museum Shop
+S116,Juniper Paper Co.,San Francisco,CA,West,37.81044,-122.45295,Lifestyle Shop
+S117,Field Notes Books,Oakland,CA,West,37.80153,-122.24276,Museum Shop
+S118,Field Notes Supply,Manchester,NH,Northeast,42.9305,-71.53117,Lifestyle Shop
+S119,Mosaic Collective,Albany,NY,Northeast,42.65012,-73.76529,Museum Shop
+S120,Golden Hour Gallery,Baltimore,MD,Mid-Atlantic,39.25666,-76.65998,Lifestyle Shop
+S121,Quarry Collective,San Francisco,CA,West,37.8164,-122.47323,Independent Retail
+S122,Linden General Store,Brooklyn,NY,Northeast,40.657,-73.91287,Bookstore
+S123,Sable General Store,Portland,OR,West,45.51039,-122.71672,Independent Retail
+S124,Sable Gallery,Washington,DC,Mid-Atlantic,38.84482,-76.97674,Bookstore
+S125,Fern Books,Charlotte,NC,South,35.19995,-80.87102,Independent Retail
+S126,Parkside Market,Brooklyn,NY,Northeast,40.62143,-73.98942,Bookstore
+S127,Elm & Ink Studio,Albany,NY,Northeast,42.66207,-73.8159,Independent Retail
+S128,Coastal Gallery,Nashville,TN,South,36.12001,-86.71152,Bookstore
+S129,Aperture Gallery,Rochester,NY,Northeast,43.10756,-77.62148,Gallery
+S130,Stillwater General Store,Oakland,CA,West,37.84854,-122.33678,Gift Shop
+S131,Clover Collective,Madison,WI,Midwest,43.07722,-89.34831,Gallery
+S132,Daybreak Paper Co.,Burlington,VT,Northeast,44.4799,-73.18499,Gift Shop
+S133,Beacon Studio,Savannah,GA,South,32.14448,-81.16921,Gallery
+S134,Harborline Paper Co.,Oakland,CA,West,37.78877,-122.29272,Gift Shop
+S135,Larkspur Collective,Charleston,SC,South,32.73814,-79.97196,Gallery
+S136,Beacon Goods,Los Angeles,CA,West,34.024,-118.20329,Gift Shop
+S137,Margot Supply,Tacoma,WA,West,47.20091,-122.45743,Lifestyle Shop
+S138,Good Company Paper Co.,Tacoma,WA,West,47.24745,-122.43553,Museum Shop
+S139,Blue Hour Paper Co.,Raleigh,NC,South,35.76911,-78.56292,Lifestyle Shop
+S140,Blue Hour General Store,Philadelphia,PA,Mid-Atlantic,39.91341,-75.1422,Museum Shop
+S141,Wren Studio,Asheville,NC,South,35.56602,-82.52199,Lifestyle Shop
+S142,Riverton Museum Shop,Brooklyn,NY,Northeast,40.6708,-73.95229,Museum Shop
+S143,Aperture Studio,Phoenix,AZ,Mountain,33.4549,-112.05,Lifestyle Shop
+S144,Side Street Gallery,Brooklyn,NY,Northeast,40.63618,-73.9128,Museum Shop
+S145,Wren Gallery,Portland,OR,West,45.51959,-122.6499,Bookstore
+S146,Wren Supply,Boston,MA,Northeast,42.39131,-71.02521,Independent Retail
+S147,Kestrel Collective,Portland,ME,Northeast,43.59906,-70.18305,Bookstore
+S148,Palisade General Store,Philadelphia,PA,Mid-Atlantic,39.88555,-75.22641,Independent Retail
+S149,Heirloom General Store,Charleston,SC,South,32.74847,-79.97693,Bookstore
+S150,Ash & Arrow Museum Shop,St. Louis,MO,Midwest,38.60459,-90.20525,Independent Retail
+S151,Hearthside General Store,Phoenix,AZ,Mountain,33.47501,-112.01591,Bookstore
+S152,Quarry General Store,Brooklyn,NY,Northeast,40.73668,-73.98449,Independent Retail
+S153,Slate Supply,Lancaster,PA,Mid-Atlantic,40.09606,-76.23577,Gift Shop
+S154,Everspring General Store,Salt Lake City,UT,Mountain,40.78742,-111.85417,Gallery
+S155,Good Company General Store,New Haven,CT,Northeast,41.26559,-72.91419,Gift Shop
+S156,Drift General Store,Louisville,KY,South,38.29871,-85.83617,Gallery
+S157,Palisade Goods,New Haven,CT,Northeast,41.31387,-72.90708,Gift Shop
+S158,Willow General Store,San Francisco,CA,West,37.83389,-122.40086,Gallery
+S159,Quarry Museum Shop,Arlington,VA,Mid-Atlantic,38.85858,-77.07199,Gift Shop
+S160,Clover General Store,New York,NY,Northeast,40.75808,-73.92666,Gallery
+S161,Field Notes General Store,Boulder,CO,Mountain,39.97039,-105.31526,Museum Shop
+S162,Borough General Store,Worcester,MA,Northeast,42.25952,-71.73212,Lifestyle Shop
+S163,Little Acre Supply,Philadelphia,PA,Mid-Atlantic,39.96408,-75.18505,Museum Shop
+S164,Wren Market,Austin,TX,South,30.20863,-97.80094,Lifestyle Shop
+S165,August Studio,Oakland,CA,West,37.78504,-122.21453,Museum Shop
+S166,Beacon Supply,Dallas,TX,South,32.73531,-96.867,Lifestyle Shop
+S167,Harborline Gallery,Richmond,VA,Mid-Atlantic,37.48782,-77.44804,Museum Shop
